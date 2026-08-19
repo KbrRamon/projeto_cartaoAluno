@@ -29,6 +29,8 @@
                                 <th scope="col">Nome</th>
                                 <th scope="col">Curso</th>
                                 <th scope="col">Bio</th>
+                                <th scope="col">Matricula</th>
+                                <th scope="col">Idade</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,6 +39,8 @@
                                     <td class="fw-semibold">{{ aluno.nome }}</td>
                                     <td><span class="badge bg-secondary">{{ aluno.curso }}</span></td>
                                     <td class="text-muted">{{ aluno.bio|default:"—" }}</td>
+                                    <td class="text-muted">{{ aluno.matricula|default:"—" }}</td>
+                                    <td class="text-muted">{{ aluno.idade|default:"—" }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>
